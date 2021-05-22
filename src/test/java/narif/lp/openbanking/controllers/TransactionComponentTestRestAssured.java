@@ -4,11 +4,14 @@ import narif.lp.openbanking.service.impl.TransactionServiceImpl;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-import static io.restassured.module.mockmvc.RestAssuredMockMvc.*;
-import static io.restassured.module.mockmvc.matcher.RestAssuredMockMvcMatchers.*;
+import static io.restassured.module.mockmvc.RestAssuredMockMvc.given;
 
-class TransactionComponentTest {
+/*
+    These static imports should be done to autoconfigure RestAssured Mock Mvc.
+    io.restassured.module.mockmvc.RestAssuredMockMvc.*
+    io.restassured.module.mockmvc.matcher.RestAssuredMockMvcMatchers.*
+*/
+class TransactionComponentTestRestAssured {
 
     @Test
     @DisplayName("Component Test for Transaction Controller")
