@@ -71,4 +71,4 @@ task cleanGenerated(type: Delete) {
 	delete "$rootDir/src/main/java/com"
 }
 
-clean.dependsOn cleanGenerated
+//clean.dependsOn cleanGenerated
