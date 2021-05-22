@@ -9,7 +9,7 @@ public class TransactionFixtures {
 
     public Transaction getTransaction(Long accountNumber) {
         Transaction transaction = new Transaction();
-        transaction.setType(Transaction.Type.DEPOSIT_MONEY);
+        transaction.setType(Transaction.Type.CREDIT);
         transaction.setAccountNumber(accountNumber);
         transaction.setAmount(BigDecimal.valueOf(3000000));
         transaction.setCurrency("USD");

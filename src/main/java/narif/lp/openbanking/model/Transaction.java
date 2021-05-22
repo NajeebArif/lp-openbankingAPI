@@ -9,10 +9,11 @@ import java.time.Instant;
 
 @Data
 @Entity
+@Table(name = "transactions_table")
 public class Transaction {
 
     public enum Type {
-        DEPOSIT_MONEY, WITHDRAW_MONEY;
+        CREDIT, DEBIT;
     }
 
     @Id
