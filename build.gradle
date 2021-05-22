@@ -2,6 +2,7 @@ plugins {
 	id 'org.springframework.boot' version '2.5.0'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id "org.openapi.generator" version "5.1.1"
 }
 
 group = 'narif.lp'
@@ -22,6 +23,10 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+	implementation 'org.openapitools:jackson-databind-nullable:0.2.1'
+
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'mysql:mysql-connector-java'
 
@@ -38,3 +43,32 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+openApiGenerate {
+	generatorName = "spring"
+	generateModelDocumentation = false
+	generateApiDocumentation = false
+	skipValidateSpec = true
+	inputSpec = "$rootDir/open-api/open-banking.yaml"
+	outputDir = "$buildDir/generated".toString()
+	invokerPackage = "com.acme.banking.invoker"
+	modelPackage = "com.acme.banking.model"
+	apiPackage = "com.acme.banking.api"
+	configOptions = [
+			dateLibrary: "java8",
+			basePackage: "com.acme.banking",
+			interfaceOnly: "true",
+			useBeanValidation: "false"
+	]
+}
+
+task copyGenerated(type: Copy) {
+	from "$buildDir/generated/src/main/java/com/acme/banking/model"
+	into "$rootDir/src/main/java/com/acme/banking/model"
+}
+
+task cleanGenerated(type: Delete) {
+	delete "$rootDir/src/main/java/com"
+}
+
+clean.dependsOn cleanGenerated
