@@ -1,15 +1,11 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import com.acme.banking.model.OBAccountStatus1Code;
-import com.acme.banking.model.OBExternalAccountSubType1Code;
-import com.acme.banking.model.OBExternalAccountType1Code;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
 import java.time.OffsetDateTime;
-import org.openapitools.jackson.nullable.JsonNullable;
+import java.util.Objects;
 
 /**
  * Unambiguous identification of the account to which credit and debit entries are made.

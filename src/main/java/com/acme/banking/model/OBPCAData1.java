@@ -1,15 +1,9 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import com.acme.banking.model.CreditInterest1;
-import com.acme.banking.model.OtherFeesCharges;
-import com.acme.banking.model.Overdraft1;
-import com.acme.banking.model.ProductDetails1;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.openapitools.jackson.nullable.JsonNullable;
+
+import java.util.Objects;
 
 /**
  * OBPCAData1

@@ -1,17 +1,14 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import com.acme.banking.model.OtherApplicationFrequency;
-import com.acme.banking.model.OtherBankInterestType;
-import com.acme.banking.model.OtherCalculationFrequency;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonValue;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.openapitools.jackson.nullable.JsonNullable;
+import java.util.Objects;
 
 /**
  * Tier Band Details

@@ -1,23 +1,13 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import com.acme.banking.model.OBActiveOrHistoricCurrencyAndAmount10;
-import com.acme.banking.model.OBActiveOrHistoricCurrencyAndAmount9;
-import com.acme.banking.model.OBBankTransactionCodeStructure1;
-import com.acme.banking.model.OBCreditDebitCode1;
-import com.acme.banking.model.OBCurrencyExchange5;
-import com.acme.banking.model.OBEntryStatus1Code;
-import com.acme.banking.model.OBTransactionCardInstrument1;
-import com.acme.banking.model.OBTransactionMutability1Code;
-import com.acme.banking.model.ProprietaryBankTransactionCodeStructure1;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import org.openapitools.jackson.nullable.JsonNullable;
+import java.util.Objects;
 
 /**
  * Provides further details on an entry in the report.

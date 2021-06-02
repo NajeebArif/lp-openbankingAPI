@@ -1,16 +1,11 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import com.acme.banking.model.OBExternalPartyType1Code;
-import com.acme.banking.model.OBParty2Address;
-import com.acme.banking.model.OBPartyRelationships1;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.openapitools.jackson.nullable.JsonNullable;
+import java.util.Objects;
 
 /**
  * OBParty2

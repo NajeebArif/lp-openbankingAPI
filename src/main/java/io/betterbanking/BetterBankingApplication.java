@@ -2,7 +2,6 @@ package io.betterbanking;
 
 import io.betterbanking.entity.Transaction;
 import io.betterbanking.repository.TransactionRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;

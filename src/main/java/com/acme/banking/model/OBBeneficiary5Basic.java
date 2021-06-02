@@ -1,12 +1,9 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import com.acme.banking.model.OBBeneficiaryType1Code;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import org.openapitools.jackson.nullable.JsonNullable;
+
+import java.util.Objects;
 
 /**
  * OBBeneficiary5Basic

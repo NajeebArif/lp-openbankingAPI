@@ -1,11 +1,7 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import io.swagger.annotations.ApiModel;
-import com.fasterxml.jackson.annotation.JsonValue;
-import org.openapitools.jackson.nullable.JsonNullable;
-
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
 
 /**
  * Indicates whether the balance is a credit or a debit balance.  Usage: A zero balance is considered to be a credit balance.

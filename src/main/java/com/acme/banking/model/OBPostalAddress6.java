@@ -1,14 +1,12 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import com.acme.banking.model.OBAddressTypeCode;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.openapitools.jackson.nullable.JsonNullable;
+import java.util.Objects;
 
 /**
  * Information that locates and identifies a specific address, as defined by postal services.

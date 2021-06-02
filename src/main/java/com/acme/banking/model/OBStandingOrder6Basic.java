@@ -1,17 +1,10 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import com.acme.banking.model.OBActiveOrHistoricCurrencyAndAmount11;
-import com.acme.banking.model.OBActiveOrHistoricCurrencyAndAmount2;
-import com.acme.banking.model.OBActiveOrHistoricCurrencyAndAmount3;
-import com.acme.banking.model.OBActiveOrHistoricCurrencyAndAmount4;
-import com.acme.banking.model.OBExternalStandingOrderStatus1Code;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
 import java.time.OffsetDateTime;
-import org.openapitools.jackson.nullable.JsonNullable;
+import java.util.Objects;
 
 /**
  * OBStandingOrder6Basic

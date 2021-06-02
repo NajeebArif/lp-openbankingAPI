@@ -1,22 +1,13 @@
 package com.acme.banking.model;
 
-import java.util.Objects;
-import com.acme.banking.model.OBExternalStatementType1Code;
-import com.acme.banking.model.OBStatement2StatementAmount;
-import com.acme.banking.model.OBStatement2StatementBenefit;
-import com.acme.banking.model.OBStatement2StatementDateTime;
-import com.acme.banking.model.OBStatement2StatementFee;
-import com.acme.banking.model.OBStatement2StatementInterest;
-import com.acme.banking.model.OBStatement2StatementRate;
-import com.acme.banking.model.OBStatement2StatementValue;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import org.openapitools.jackson.nullable.JsonNullable;
+import java.util.Objects;
 
 /**
  * Provides further details on a statement resource.

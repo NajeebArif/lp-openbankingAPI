@@ -10,7 +10,7 @@ ext {
 }
 
 group = 'io.better-banking'
-version = '1.3.2'
+version = '1.4.1'
 sourceCompatibility = '11'
 
 configurations {
