@@ -6,6 +6,7 @@ import lombok.EqualsAndHashCode;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.Instant;
+import java.util.Date;
 
 @Data
 @Entity
@@ -35,4 +36,12 @@ public class Transaction {
     private String merchantName;
 
     private String merchantLogo;
+
+    public void setTransactionType(String type){
+        setType(type.equalsIgnoreCase("DEBIT")? Type.DEBIT: Type.CREDIT);
+    }
+
+    public void setInstantFromDate(Date date){
+        setDate(date.toInstant());
+    }
 }

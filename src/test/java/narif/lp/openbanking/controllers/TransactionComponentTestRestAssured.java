@@ -38,7 +38,7 @@ class TransactionComponentTestRestAssured {
     @DisplayName("Component Test for Transaction Controller")
     public void testTransactionComponent() {
         given()
-                .standaloneSetup(new TransactionController(new TransactionServiceImpl(transactionRepo)))
+                .standaloneSetup(new TransactionController(new TransactionServiceImpl(transactionRepo, null, null)))
         .when()
                 .get("/transactions/{accountNumber}", 123456789l)
         .then()
