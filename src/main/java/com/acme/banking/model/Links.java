@@ -12,7 +12,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * Links relevant to the payload
  */
 @ApiModel(description = "Links relevant to the payload")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class Links   {
   @JsonProperty("Self")
   private URI self;

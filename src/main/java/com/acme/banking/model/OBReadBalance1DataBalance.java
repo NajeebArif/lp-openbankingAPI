@@ -18,7 +18,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * Set of elements used to define the balance details.
  */
 @ApiModel(description = "Set of elements used to define the balance details.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class OBReadBalance1DataBalance   {
   @JsonProperty("AccountId")
   private String accountId;

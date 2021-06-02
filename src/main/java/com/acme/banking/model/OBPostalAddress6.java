@@ -14,7 +14,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * Information that locates and identifies a specific address, as defined by postal services.
  */
 @ApiModel(description = "Information that locates and identifies a specific address, as defined by postal services.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class OBPostalAddress6   {
   @JsonProperty("AddressType")
   private OBAddressTypeCode addressType;

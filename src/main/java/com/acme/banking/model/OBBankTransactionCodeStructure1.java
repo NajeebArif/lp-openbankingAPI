@@ -11,7 +11,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * Set of elements used to fully identify the type of underlying transaction resulting in an entry.
  */
 @ApiModel(description = "Set of elements used to fully identify the type of underlying transaction resulting in an entry.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class OBBankTransactionCodeStructure1   {
   @JsonProperty("Code")
   private String code;

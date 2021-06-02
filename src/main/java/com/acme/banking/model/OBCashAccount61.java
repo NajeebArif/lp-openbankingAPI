@@ -11,7 +11,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * Unambiguous identification of the account of the debtor, in the case of a crebit transaction.
  */
 @ApiModel(description = "Unambiguous identification of the account of the debtor, in the case of a crebit transaction.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class OBCashAccount61   {
   @JsonProperty("SchemeName")
   private String schemeName;

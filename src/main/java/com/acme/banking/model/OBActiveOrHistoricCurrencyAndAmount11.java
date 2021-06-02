@@ -11,7 +11,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * The amount of the last (most recent) Standing Order instruction.
  */
 @ApiModel(description = "The amount of the last (most recent) Standing Order instruction.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class OBActiveOrHistoricCurrencyAndAmount11   {
   @JsonProperty("Amount")
   private String amount;

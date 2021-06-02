@@ -14,7 +14,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * Set of elements used to provide details on the currency exchange.
  */
 @ApiModel(description = "Set of elements used to provide details on the currency exchange.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class OBCurrencyExchange5   {
   @JsonProperty("SourceCurrency")
   private String sourceCurrency;

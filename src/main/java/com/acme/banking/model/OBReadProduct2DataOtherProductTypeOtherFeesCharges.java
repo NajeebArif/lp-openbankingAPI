@@ -17,7 +17,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * Contains details of fees and charges which are not associated with either Overdraft or features/benefits
  */
 @ApiModel(description = "Contains details of fees and charges which are not associated with either Overdraft or features/benefits")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class OBReadProduct2DataOtherProductTypeOtherFeesCharges   {
   /**
    * TariffType which defines the fee and charges.

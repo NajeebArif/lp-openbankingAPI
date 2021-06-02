@@ -11,7 +11,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * Other application frequencies that are not available in the standard code list
  */
 @ApiModel(description = "Other application frequencies that are not available in the standard code list")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class OtherApplicationFrequency   {
   @JsonProperty("Code")
   private String code;

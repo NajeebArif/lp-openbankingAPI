@@ -11,7 +11,7 @@ import org.openapitools.jackson.nullable.JsonNullable;
  * Amount of money of the cash balance after a transaction entry is applied to the account..
  */
 @ApiModel(description = "Amount of money of the cash balance after a transaction entry is applied to the account..")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-06T12:42:38.515350-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-02-27T20:13:15.656214-05:00[America/New_York]")
 public class OBTransactionCashBalanceAmount   {
   @JsonProperty("Amount")
   private String amount;
