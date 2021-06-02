@@ -1,6 +1,7 @@
 package narif.lp.openbanking.service.impl;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import lombok.extern.slf4j.Slf4j;
 import narif.lp.openbanking.model.Transaction;
 import narif.lp.openbanking.repository.MerchantDetailsRepo;
 import narif.lp.openbanking.repository.TransactionApiClient;
@@ -8,10 +9,10 @@ import narif.lp.openbanking.repository.TransactionRepo;
 import narif.lp.openbanking.service.TransactionService;
 import org.springframework.stereotype.Service;
 
-import java.util.Collections;
 import java.util.List;
 
 @Service
+@Slf4j
 public class TransactionServiceImpl implements TransactionService {
 
     private final TransactionRepo transactionRepo;
@@ -39,8 +40,9 @@ public class TransactionServiceImpl implements TransactionService {
         return transactions;
     }
 
-    private List<Transaction> foundNone(final Integer accountNumber, final Throwable throwable) {
-        return Collections.emptyList();
+    private List<Transaction> foundNone(final Long accountNumber, final Throwable throwable) {
+        log.error("Error while accessing the remote API.");
+        return transactionRepo.findAllByAccountNumber(accountNumber);
     }
 
 
